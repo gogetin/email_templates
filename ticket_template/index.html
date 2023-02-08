@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --primary: #031b88;
+        --secondary: #6096fd;
+        --heading: #fb7b8e;
+        --font: #fff;
+      }
+      /* :root {
+        --primary: #2c6975;
+        --secondary: #68b2a0;
+        --heading: #fb7b8e;
+        --font: #fff;
+      } */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      }
+      .sub-heading {
+        background-color: var(--primary);
+        color: var(--font);
+      }
+      .header {
+        font-weight: bold;
+        color: var(--font);
+        background-color: var(--secondary);
+      }
+      .heading {
+        background-color: var(--heading);
+      }
+      .grid-item {
+        border: 1px solid #000;
+        padding: 5px;
+      }
+      .content {
+        background-color: var(--font);
+        color: var(--primary);
+      }
+      .boarding-details-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 14%);
+        margin-top: 5px;
+      }
+      .booking-details-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        margin-top: 5px;
+      }
+      .passenger-details-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 14%);
+      }
+      .fair-details-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+      }
+      .total {
+        background-color: var(--primary);
+        color: var(--font);
+        font-weight: bold;
+      }
+      .success-txt {
+        color: #4bb543;
+        font-weight: bold;
+      }
+      .ticket-first-section {
+        display: grid;
+        grid-template-columns: 44% 10% 44%;
+      }
+      .flex-Y-center {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+      }
+      .arpt {
+        min-width: 330px;
+      }
+      .airline-details-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        margin-bottom: 10px;
+      }
+      .contact-details-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+      }
+      .departing-airport {
+      }
+    </style>
+  </head>
+  <body style="margin: 5px; padding: 5px">
+    <header
+      style="
+        display: grid;
+        grid-template-columns: 30% 30% 30% 10%;
+        grid-row-gap: 10px;
+      "
+    >
+      <h2>Flight E-Ticket</h2>
+      <h2>Kamlesh Patel</h2>
+      <h2>GIFB230</h2>
+      <div></div>
+      <p style="border-right: 1px solid black; padding-left: 10px">
+        support@gogetin.com
+      </p>
+      <p style="border-right: 1px solid black; padding-left: 10px">
+        TUE JAN 31 11:00 PM
+      </p>
+      <p style="padding-left: 10px">3 min read</p>
+    </header>
+    <!-- Agency Information -->
+    <div
+      style="
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+      "
+    >
+      <!-- LOGO -->
+      <img height="60px" src="logo.png" />
+      <!-- Contact Details Starts-->
+      <div>
+        <ul style="list-style: none">
+          <li>9B, Marquee Street, Kolkata-700040</li>
+          <li>Phone: +91 1234567890</li>
+          <li>Email: support@gogetin.com</li>
+        </ul>
+      </div>
+      <!-- Contact Details Ends-->
+    </div>
+    <!-- Boarding Details -->
+    <div class="boarding-details-grid">
+      <h3 class="sub-heading">Booking Details</h3>
+      <div class="sub-heading"></div>
+      <div class="sub-heading"></div>
+      <div class="sub-heading"></div>
+      <div class="sub-heading"></div>
+      <div class="sub-heading"></div>
+      <div class="sub-heading"></div>
+      <!-- Columns -->
+      <div class="grid-item header">Date</div>
+      <div class="grid-item header">Dept Time</div>
+      <div class="grid-item header">From</div>
+      <div class="grid-item header">To</div>
+      <div class="grid-item header">Flight No.</div>
+      <div class="grid-item header">Terminal</div>
+      <div class="grid-item header">Airline</div>
+      <!-- Data -->
+      <div class="grid-item content">21 Feb 2023</div>
+      <div class="grid-item content">23: 17</div>
+      <div class="grid-item content">Chennai</div>
+      <div class="grid-item content">Mumbai</div>
+      <div class="grid-item content">576</div>
+      <div class="grid-item content">Terminal 2</div>
+      <div class="grid-item content">Air India</div>
+    </div>
+    <!-- Ticket Summary -->
+    <div class="booking-details-grid">
+      <h3 class="sub-heading">Ticket Summary</h3>
+      <div class="sub-heading"></div>
+      <!-- Columns -->
+      <div class="grid-item header">ETICKET</div>
+      <div class="grid-item header">Booking Reference</div>
+      <!-- Data -->
+      <div class="grid-item content">ETKT 11111111111</div>
+      <div class="grid-item content">
+        GDS PNR : TESTPNR, AIRLINE : AI 11111111111
+      </div>
+    </div>
+
+    <!-- Main Ticket -->
+    <div>
+      <!-- Flight Details -->
+      <div
+        class="sub-heading"
+        style="display: flex; align-items: center; width: 98%"
+      >
+        <!-- <img
+          style="border-radius: 50%; margin-right: 20px"
+          height="90px"
+          width="120px"
+          src="air_india.png"
+        /> -->
+        <h3>Flight Details</h3>
+      </div>
+      <div class="ticket-first-section">
+        <!-- Departing Airport details -->
+        <div class="header arpt">
+          <!-- Place -->
+          <div>From Mumbai</div>
+          <!-- Date -->
+          <div>Date: Tue, 21 Feb 2023</div>
+          <!-- Time -->
+          <div>Time: 11:35</div>
+          <!-- Airport -->
+          <div>Airport: Mumbai - Chhatrapati Shivaji</div>
+        </div>
+        <div class="">
+          <img src="flight.png" width="60px;" />
+        </div>
+        <div class="header">
+          <!-- Place -->
+          <div>To Chennai</div>
+          <!-- Date -->
+          <div>Date: Tue, 21 Feb 2023</div>
+          <!-- Time -->
+          <div>Time: 11:35</div>
+          <!-- Airport  -->
+          <div>Airport: Chennai - Arpt</div>
+        </div>
+      </div>
+      <!-- Airline Details Details -->
+      <div
+        class="sub-heading"
+        style="display: flex; align-items: center; width: 98%"
+      >
+        <!-- <img
+          style="border-radius: 50%; margin-right: 20px"
+          height="90px"
+          width="120px"
+          src="air_india.png"
+        /> -->
+        <h3>Airline Details</h3>
+      </div>
+      <div class="airline-details-grid header">
+        <div>AirlineName: Air India</div>
+        <div>Flight Number: AI576</div>
+        <div>Booking Status: <span class="">Confirmed</span></div>
+        <div>Duration: 1h 50m</div>
+        <div>Aircraft: Non Stop</div>
+        <div>Cabin: Economy</div>
+        <div>Class: L</div>
+      </div>
+
+      <!-- Passenger Table starts-->
+      <div class="passenger-details-grid">
+        <!-- Table heading -->
+        <div class="grid-item header">Passenger Name</div>
+        <div class="grid-item header">ETicket Number</div>
+        <div class="grid-item header">Baggage | Check in | Cabin</div>
+        <div class="grid-item header">Seat Preference</div>
+        <div class="grid-item header">Add Baggage</div>
+        <div class="grid-item header">FFlyer Number</div>
+        <div class="grid-item header">Meal</div>
+        <!-- Table Row 1 -->
+        <div class="grid-item content" class="grid-item content">
+          Mr. Kamlesh Patel
+        </div>
+        <div class="grid-item content">11111111111</div>
+        <div class="grid-item content">25 KG (01 PIECE ONLY) | 7 KG</div>
+        <div class="grid-item content">-</div>
+        <div class="grid-item content">No bag</div>
+        <div class="grid-item content">-</div>
+        <div class="grid-item content">No Meal</div>
+        <!-- Table Row 2 -->
+        <div class="grid-item content">Mr. Kamlesh Patel</div>
+        <div class="grid-item content">11111111111</div>
+        <div class="grid-item content">25 KG (01 PIECE ONLY) | 7 KG</div>
+        <div class="grid-item content">-</div>
+        <div class="grid-item content">No bag</div>
+        <div class="grid-item content">-</div>
+        <div class="grid-item content">No Meal</div>
+        <!-- Table Row 3 -->
+        <div class="grid-item content">Mr. Kamlesh Patel</div>
+        <div class="grid-item content">11111111111</div>
+        <div class="grid-item content">25 KG (01 PIECE ONLY) | 7 KG</div>
+        <div class="grid-item content">-</div>
+        <div class="grid-item content">No bag</div>
+        <div class="grid-item content">-</div>
+        <div class="grid-item content">No Meal</div>
+        <!-- Table Row 4 -->
+        <div class="grid-item content">Mr. Kamlesh Patel</div>
+        <div class="grid-item content">11111111111</div>
+        <div class="grid-item content">25 KG (01 PIECE ONLY) | 7 KG</div>
+        <div class="grid-item content">-</div>
+        <div class="grid-item content">No bag</div>
+        <div class="grid-item content">-</div>
+        <div class="grid-item content">No Meal</div>
+        <!-- Table Row 5 -->
+        <div class="grid-item content">Mr. Kamlesh Patel</div>
+        <div class="grid-item content">11111111111</div>
+        <div class="grid-item content">25 KG (01 PIECE ONLY) | 7 KG</div>
+        <div class="grid-item content">-</div>
+        <div class="grid-item content">No bag</div>
+        <div class="grid-item content">-</div>
+        <div class="grid-item content">No Meal</div>
+        <!-- Table Row 6 -->
+        <div class="grid-item content">Mr. Kamlesh Patel</div>
+        <div class="grid-item content">11111111111</div>
+        <div class="grid-item content">25 KG (01 PIECE ONLY) | 7 KG</div>
+        <div class="grid-item content">-</div>
+        <div class="grid-item content">No bag</div>
+        <div class="grid-item content">-</div>
+        <div class="grid-item content">No Meal</div>
+      </div>
+
+      <!-- Fair Details  -->
+      <div style="display: grid; grid-template-columns: 49% 49%">
+        <h3 class="sub-heading">Fare Summary</h3>
+        <div class="sub-heading"></div>
+        <!-- Fare Summary -->
+        <div class="fair-details-grid">
+          <!-- Heading -->
+          <div class="grid-item header">Fare Details</div>
+          <div class="grid-item header">Currency</div>
+          <div class="grid-item header">Amount</div>
+          <!-- Fare row 1 -->
+          <div class="grid-item header">Base Fair</div>
+          <div class="grid-item">INR</div>
+          <div class="grid-item">18,007</div>
+          <!-- Fare row 2 -->
+          <div class="grid-item header">Tax Amount</div>
+          <div class="grid-item">INR</div>
+          <div class="grid-item">5,289</div>
+          <!-- Fare row 3 -->
+          <div class="grid-item header">Service Charge</div>
+          <div class="grid-item">INR</div>
+          <div class="grid-item">0</div>
+          <!-- Fare row 4 -->
+          <div class="grid-item header">GST Charges</div>
+          <div class="grid-item">INR</div>
+          <div class="grid-item">0</div>
+          <!-- Fare row 5 -->
+          <div class="grid-item total">Total Fare</div>
+          <div class="grid-item total">INR</div>
+          <div class="grid-item total">23,296</div>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(2, 50%)">
+          <div>Fare Calculations</div>
+          <div></div>
+          <div>Form of Payment</div>
+          <div></div>
+          <div>Fare Edorsement</div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div style="display: grid; grid-template-columns: 49% 49%">
+        <h3 class="sub-heading">Contact Person Details</h3>
+        <h3 class="sub-heading">Special Deals</h3>
+        <!-- Contact Table -->
+        <div class="contact-details-grid">
+          <div class="grid-item header">Name</div>
+          <div class="grid-item header">Contact Number</div>
+          <div class="grid-item content">Kamlesh Patel</div>
+          <div class="grid-item content">+91 00000-00000</div>
+        </div>
+        <!-- Special Deals -->
+        <div class="contact-details-grid">
+          <div class="grid-item header">Passenger Name</div>
+          <div class="grid-item header">Special Service Request</div>
+          <div class="grid-item content">Kamlesh Patel</div>
+          <div class="grid-item content">Some Special Service</div>
+          <div class="grid-item content">Kamlesh Patel</div>
+          <div class="grid-item content">Some Special Service</div>
+          <div class="grid-item content">Kamlesh Patel</div>
+          <div class="grid-item content">Some Special Service</div>
+          <div class="grid-item content">Kamlesh Patel</div>
+          <div class="grid-item content">Some Special Service</div>
+          <div class="grid-item content">Kamlesh Patel</div>
+          <div class="grid-item content">Some Special Service</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

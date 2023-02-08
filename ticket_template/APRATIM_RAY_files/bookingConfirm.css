@@ -1,0 +1,912 @@
+.container {
+  width: 100%;
+  margin: 0px auto;
+}
+.pnr__print{
+  clear: both;
+  padding-top: 15px;
+  text-align: center;
+}
+.pnr__print--smfont {
+  font-size: 16px;
+}
+.graycolor, .media_black{
+  color: #000 !important;
+}
+.art-pnrstatus, .pax-detailsAll {
+  color: #000 !important;
+  font-weight: bold !important;
+}
+.stops-arr-air, .stops-arr-air::before, .stops-arr-air::after {
+  background: #000 !important;
+}
+.pnr__print--text {
+  font-size: 26px;
+  font-weight: bold;
+}
+.print_image-success {
+  max-width: 200px;
+  max-height: 50px;
+}
+.abt-booklist {
+  list-style: none;
+  width: 30%;
+  float: left;
+}
+.abt-booksuceed {
+  width: 50%;
+  float: left;
+}
+.booking__status-successTrip {
+  font-size: 24px;
+  color: #0da700 !important;
+}
+.abt-section {
+  background: #f0f9ff;
+  background: -moz-linear-gradient(top, #f0f9ff 0%, #ffffff 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #f0f9ff), color-stop(100%, #ffffff));
+  background: -webkit-linear-gradient(top, #f0f9ff 0%, #ffffff 100%);
+  background: -o-linear-gradient(top, #f0f9ff 0%, #ffffff 100%);
+  background: -ms-linear-gradient(top, #f0f9ff 0%, #ffffff 100%);
+  background: linear-gradient(to bottom, #f0f9ff 0%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f9ff', endColorstr='#ffffff', GradientType=0);
+  border-bottom: 1px solid #e5e5e5;
+  display: inline-block;
+  width: 100%;
+}
+.media-print-flightview {
+  width: 100%;
+}
+.apt-airportname {
+  display: block;
+  line-height: 1;
+}
+.reviewbox__airlineLogo {
+  width: 35px;
+}
+.apt-classname {
+  display: block;
+}
+.tile-bgShadow {
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.imageAirline {
+  width: 50px;
+  float: left;
+}
+.apt-listspan {
+  display: block;
+  line-height: 1;
+}
+.apt-passdel {
+  font-size: 24px;
+  padding: 10px;
+  background: #e5e5e5;
+  border-bottom: 1px solid #ccc;
+}
+.serialNumber {
+  width: 50px;
+  float: left;
+  padding-left: 5px;
+}
+.nameDobpassport {
+  width: 20%;
+  float: left;
+}
+.pnrTicketNumber {
+  width: 30%;
+  float: left;
+}
+.mealBaggage {
+  width: 40%;
+  float: left;
+}
+.pax-confirmbox {
+  display: inline-block;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+  width: 100%;
+}
+.pax-fordesktop {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.art-tabody li {
+  clear: both;
+  border-bottom: 1px solid #ccc;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+}
+.art-tabody{
+  clear: both;
+  width: 100%;
+  display: inline-grid;
+}
+.art-spnlist {
+  display: block;
+}
+.art-tablelist {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.confirmation__info-box {
+  width: 60%;
+  border: 1px solid #ccc;
+  margin-top: 30px;
+}
+.faresummery__heading-box {
+  background: #e5e5e5;
+  width: 100%;
+  display: inherit;
+  padding: 10px 0;
+  border: 1px solid #ccc;
+}
+.faresummery__heading-box span {
+  padding-left: 10px;
+  color: #333;
+  font-size: 16px;
+}
+.btm-border.bold-font, .btm-border.bold-font-bf {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  font-size: 15px;
+}
+.apt-tlbalance {
+  font-size: 20px;
+  color: #000;
+}
+.art-pnrstatus {
+  color: #0fa800;
+}
+.apt-mainlaydesktop {
+  padding: 8px 20px;
+  display: inline-block;
+}
+.layover-middle {
+  background: #f5f5f5;
+  text-align: center;
+  margin-top: 15px;
+  border: 1px dashed #ccc;
+}
+.first-inline {
+  width: 15%;
+}
+.second-inline {
+  width: 25%;
+}
+.third-inline {
+  width: 10%;
+}
+.fourth-inline {
+  width: 25%;
+}
+.fifth-inline {
+  width: 20%;
+}
+.apt-gridspan {
+  display: block;
+}
+.apt-firstpr {
+  font-size: 16px;
+    background: #f5f5f5;
+    padding: 9px 25px;
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    float: left;
+    font-weight: bold;
+}
+.common-pnr-segment {
+  display: inline-block;
+  text-align: right;
+  background: #f5f5f5;
+  box-sizing: border-box;
+  padding: 7px;
+  font-size: 25px;
+  color: #333;
+  font-weight: bold;
+  border: 1px solid #e5e5e5;
+  float: right;
+}
+.baggagebold {
+  color: #333
+}
+.fareSummery__withoput-print {
+  display: none
+}
+.ffnumber-pax {
+	color: #9b9b9b;
+}
+.pax-detailsAll {
+    width: 100%;
+}
+.otb-msg{
+  background: #fffcf7;
+  padding: 2px;
+  border: 1px solid #e5e5e5;
+  clear: both;
+}
+.abt-mwsg {
+  background: #fffcf7;
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  clear: both;
+}
+
+.abt-mwsg h5 {
+  color: #8d7f64;
+  font-weight: bold;
+  font-size: 14px;
+}
+.abt-mwsgup {
+  background: #fffcf7;
+  padding: 10px;
+  border: 1px solid #fffcf7;
+}
+.paxwise-status {
+  font-size: 11px;
+  color: #00ac00;
+}
+.pax-passportSize {
+  font-size: 11px;
+  color: #848f91;
+  display: inline-block;
+  line-height: 16px;
+}
+.pax-tablemain {
+  width: 100%;
+}
+.pax-tablemain {
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+.pax-tablemain th, .pax-tablemain td {
+  border-bottom: 1px solid #ccc;
+  padding: 8px 3px;
+  text-align: left;
+}
+.name-paxPassport {
+  width: 30%;
+}
+
+.user-details-header {
+  width: 100%;
+  float: left;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.user-details-header h4 {
+  background: #e5e5e5;
+  padding: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.user-details-header li {
+  width: 30%;
+  float: left;
+  padding: 5px 8px;
+  word-break: break-all;
+}
+.abt-booklist-right {
+  width: 45%;
+  float: right;
+  text-align: right;
+}
+thead { display: table-row-group}
+.airivalterminal {
+  display: block
+}
+.stops-arr-air {
+  width: 70px;
+  height: 2px;
+  background: #ccc;
+  position: relative;
+  display: inline-block;
+}
+.stops-arr-air::before {
+  content: '';
+  background: #ccc;
+  height: 10px;
+  width: 2px;
+  right: 3px;
+  position: absolute;
+  border-radius: 5px;
+  transform: rotate(45deg);
+}
+.stops-arr-air::after {
+  content: '';
+  background: #ccc;
+  height: 10px;
+  width: 2px;
+  right: 2px;
+  position: absolute;
+  border-radius: 5px;
+  transform: rotate(140deg);
+  top: -7px;
+}
+@page {
+  size: A4;
+}
+.stops-pdf {
+  display: none;
+}
+@media print {
+  body {
+    font-family: Arial, Helvetica, sans-serif !important;
+  }
+  .abt-booklist {
+    list-style: none;
+    width: 30%;
+    float: left;
+  }
+  .print_image-success {
+    max-width: 200px;
+    max-height: 50px;
+}
+  .abt-booksuceed {
+    width: 280px;
+    float: left;
+  }
+  .booking__status-successTrip {
+    font-size: 24px;
+    color: #0da700 !important;
+  }
+  .media-print-flightview {
+    width: 100%;
+  }
+  .apt-airportname {
+    display: block;
+    line-height: 1;
+  }
+  .reviewbox__airlineLogo {
+    width: 35px;
+  }
+  .apt-classname {
+    display: block;
+  }
+  .tile-bgShadow {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+  .imageAirline {
+    width: 50px;
+    float: left;
+  }
+  .container {
+    width: 100%;
+    margin: 0px auto;
+  }
+  .apt-listspan {
+    display: block;
+    line-height: 1;
+  }
+  .apt-passdel {
+    font-size: 24px;
+    padding: 10px;
+    background: #e5e5e5;
+    border-bottom: 1px solid #ccc;
+  }
+  .serialNumber {
+    width: 50px;
+    float: left;
+    padding-left: 5px;
+  }
+  .nameDobpassport {
+    width: 20%;
+    float: left;
+  }
+  .pnrTicketNumber {
+    width: 30%;
+    float: left;
+  }
+  .mealBaggage {
+    width: 40%;
+    float: left;
+  }
+  .pax-confirmbox {
+    display: inline-block;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+    width: 100%;
+  }
+  .pax-fordesktop {
+    display: inline-block;
+    width: 99.5%;
+    border: 1px solid #ccc;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+  .art-tabody li {
+    clear: both;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .art-tabody{
+    clear: both;
+    width: 100%;
+    display: inline-grid;
+  }
+  .art-spnlist {
+    display: block;
+  }
+  .art-tablelist {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .confirmation__info-box {
+    width: 99.5%;
+    border: 1px solid #ccc;
+    margin-top: 30px;
+  }
+  .faresummery__heading-box {
+    background: #e5e5e5;
+    width: 100%;
+    display: inherit;
+    padding: 10px 0;
+    font-size: 17px;
+    border: 1px solid #ccc;
+  }
+  .faresummery__heading-box span {
+    padding-left: 10px;
+    color: #333;
+    font-size: 16px;
+  }
+  .btm-border.bold-font, .btm-border.bold-font-bf {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    font-size: 15px;
+  }
+  .apt-tlbalance {
+    font-size: 20px;
+    color: #000;
+  }
+  .art-pnrstatus {
+    color: #0fa800;
+  }
+  .apt-mainlaydesktop {
+    display: inline-block;
+  }
+  .layover-middle {
+    background: #f5f5f5;
+    text-align: center;
+    margin-top: 15px;
+    border: 1px dashed #ccc;
+  }
+  .first-inline {
+    width: 15%;
+  }
+  .second-inline {
+    width: 25%;
+  }
+  .third-inline {
+    width: 10%;
+    display: inline-grid
+  }
+  .fourth-inline {
+    width: 25%;
+  }
+  .fifth-inline {
+    width: 20%;
+  }
+  .apt-gridspan {
+    display: block;
+  }
+  .apt-firstpr {
+    font-size: 16px;
+    background: #f5f5f5;
+    padding: 9px 25px;
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    float: left;
+    font-weight: bold;
+  }
+  .common-pnr-segment {
+    display: inline-block;
+    text-align: right;
+    background: #f5f5f5;
+    box-sizing: border-box;
+    padding: 7px;
+    font-size: 25px;
+    color: #333;
+    font-weight: bold;
+    border: 1px solid #e5e5e5;
+    float: right;
+  }
+  .baggagebold {
+    color: #333
+  }
+  .fareSummery__withoput-print {
+    display: none
+  }
+  .ffnumber-pax {
+    color: #9b9b9b;
+  }
+  .pax-detailsAll {
+      width: 100%;
+  }
+  .otb-msg{
+    background: #fffcf7;
+    padding: 2px;
+    border: 1px solid #e5e5e5;
+    clear: both;
+  }
+  .abt-mwsg {
+    background: #fffcf7;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    clear: both;
+}
+
+.abt-mwsg h5 {
+		color: #8d7f64;
+    font-weight: bold;
+    font-size: 14px;
+}
+.abt-mwsgup {
+	background: #fffcf7;
+	padding: 10px;
+	border: 1px solid #fffcf7;
+}
+.paxwise-status {
+  font-size: 11px;
+  color: #00ac00;
+}
+.pax-passportSize {
+  font-size: 11px;
+  color: #848f91;
+  display: inline-block;
+  line-height: 16px;
+}
+.pax-tablemain {
+  width: 100%;
+}
+.pax-tablemain {
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+.pax-tablemain th, .pax-tablemain td {
+  border-bottom: 1px solid #ccc;
+  padding: 8px 3px;
+  text-align: left;
+}
+.name-paxPassport {
+  width: 30%;
+}
+.user-details-header {
+  width: 99.9%;
+  float: left;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.user-details-header h4 {
+  background: #e5e5e5;
+  padding: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.user-details-header li {
+  width: 45%;
+  float: left;
+  padding: 5px 8px;
+  word-break: break-all;
+}
+thead {display:table-row-group}
+.airivalterminal {
+  display: block
+}
+.passport-details-hide {
+  display: none
+}
+.graycolor, .media_black{
+  color: #000 !important;
+}
+.art-pnrstatus, .pax-detailsAll {
+  color: #000 !important;
+  font-weight: bold !important;
+}
+.stops-arr-air, .stops-arr-air::before, .stops-arr-air::after {
+  background: #000 !important;
+}
+@page {
+  size: auto;  
+  margin: 0 15px;  
+}
+.stops-pdf {
+  display: none;
+}
+.print_back {
+  display: none !important;
+}
+}
+
+.print_back {
+  border: 1px solid #ff7b39;
+  color: #ff7b39;
+  background: #fff;
+  text-shadow: none;
+  padding: 5px 15px;
+  border-radius: 3px;
+  display: block;
+  width: 60px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  transition: all 0.4s;
+  margin: 10px 0;
+}
+
+.print_back .fa {
+  margin-right: 5px;
+}
+
+#body {
+  zoom: 100%;
+}
+#body .print_back {
+  display: block;
+}
+#body .tripjack--body__print {
+  width: 850px !important;
+  padding: 30px 20px;
+}
+.downloadPdf {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  background: #e5e5e5;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .abt-section{
+    padding: 10px !important;
+    box-sizing: border-box;
+  }
+  .abt-booklist {
+    width: 50% !important;
+  }
+  .abt-booksuceed {
+    width: 100%;
+    font-size: 11px;
+    line-height: 1.5;
+  }
+  .abt-booklist-right {
+    width: 50%;
+    font-size: 11px;
+    line-height: 1.5;
+  }
+  .apt-airterminal {
+    display: none;
+  }
+  .booking-main {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .tile-bgShadow {
+    padding: 10px 10px 0 !important;
+  }
+  .apt-firstpr {
+    font-size: 8px;
+    padding: 0 8px;
+    margin: 0 !important;
+  }
+  .common-pnr-segment {
+    padding: 0 8px;
+    font-size: 8px !important;
+  }
+  .common-pnr-segment span {
+    font-size: 8px !important;
+  }
+  .media-print-flightview {
+    font-size: 8px;
+    padding-bottom: 0 !important;
+  }
+  .first-inline {
+    width: 12% !important;
+  }
+  .imageAirline {
+    width: 30px !important;
+  }
+  .reviewbox__airlineLogo {
+    display: block;
+    width: 25px !important;
+  }
+  .fifth-inline {
+    width: 23%;
+}
+  .second-inline,.fourth-inline, .fifth-inline {
+    line-height: 1.5;
+  }
+  .third-inline {
+    font-size: 8px;
+    width: 15%;
+  }
+  .stops-arr-air {
+    width: 40px;
+    top: -10px;
+  }
+  .operated-by {
+    display: none;
+  }
+  .confirmation__info-box {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .apt-lasthour {
+    line-height: 1.5;
+  }
+  .baggage_info {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+  .apt-mainlaydesktop {
+    padding: 0 20px;
+    font-size: 10px;
+  }
+  .pb-20.media-print-border-flightdetails {
+    padding-bottom: 10px !important;
+  }
+  .tile-bgShadow {
+    margin-bottom: 10px !important;
+  }
+  .apt-passdel {
+    font-size: 10px !important;
+    padding: 2px 10px !important;
+    border-bottom: 0 !important;
+  }
+  .pax-tablemain {
+    font-size: 8px;
+    line-height: 1.5;
+  }
+  .faresummery__heading-box {
+    padding: 2px 0;
+    border: 0;
+  }
+  .faresummery__heading-box span {
+    font-size: 10px;
+  }
+  .btm-border.bold-font, .btm-border.bold-font-bf {
+    padding: 2px 10px;
+    font-size: 9px;
+  }
+  .apt-tlbalance {
+    font-size: 12px;
+  }
+  .user-details-header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .user-details-header h4 {
+    font-size: 10px;
+  }
+  .user-details-header li {
+    width: 100%;
+    padding: 2px 8px 0;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+  .user-details-header li:last-child {
+    padding-bottom: 2px;
+    padding-top: 0;
+  }
+  .abt-mwsg {
+    padding: 10px;
+    margin-top: 10px !important;
+  }
+  .abt-infolist {
+    font-size: 9px;
+    line-height: 1.5;
+  }
+  .abt-mwsg h5 {
+    font-size: 10px;
+  }
+  .print_back {
+    padding: 3px 10px !important;
+    font-size: 12px !important;
+    margin: 10px 10px !important;
+  }
+  .bookingConfirm-reviewTable-positionHandle {
+    float: left !important;
+    margin-top: 0 !important;
+    width: 100%;
+  }
+  .cityInfo {
+    width: 100% !important;
+    display: initial !important;
+  }
+  .bookingConfirm-cityInfo-positionHandle {
+    font-size: 14px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .pnrDetails {
+    width: 100% !important; 
+    text-align: center !important; 
+    display: initial !important;
+  }
+  .pnrDetailsTitle {
+    width: 100% !important; 
+    box-sizing: border-box !important;
+  }
+  .pnrDetailsData {
+    font-size: 20px !important;
+  }
+  .airlineLogoInfo {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .stopArrow {
+    display: table-cell !important;
+    font-size: 10px;
+  }
+  .arrowImage {
+    width: 55px;
+  }
+  .mealbagInfo {
+    text-align: right;
+  }
+  .deptCityInfo {
+    padding-left: 5px;
+  }
+  .body-arabic--wrapper .bookingConfirm-reviewTable-positionHandle {
+    float: right !important;
+  }
+  .body-arabic--wrapper .arrowImage {
+    transform: scaleX(-1);
+  }
+  .body-arabic--wrapper .mealbagInfo {
+    text-align: left;
+  }
+  .body-arabic--wrapper .print_back .fa {
+    transform: scaleX(-1);
+    margin-left: 5px;
+  }
+
+}
+
+/********************** CSS CHANGES FOR ARABIC ********************/
+.body-arabic--wrapper .bookingConfirm-header-positionHandle {
+  text-align: left !important;
+}
+.body-arabic--wrapper .bookingConfirm-reviewTable-positionHandle {
+  float: left;
+}
+.body-arabic--wrapper .bookingConfirm-cityInfo-positionHandle {
+  display: flex !important;
+}
+.body-arabic--wrapper .bookingConfirm-arrow-positionHandle {
+  transform: rotate(180deg);
+}
+.body-arabic--wrapper .bookingConfirm-dateInfo-positionHandle {
+  margin-right: 5px;
+}
+.body-arabic--wrapper .bookingConfirm-paxDetails-tableHeadings-positionHandle {
+  text-align: right !important;
+}
+.body-arabic--wrapper .bookingConfirm-fareSummary-positionHandle {
+  text-align: left !important;
+}
+.body-arabic--wrapper .bookingConfirm-userInfo-positionHandle {
+  display: flex !important;
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        list-style: none;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      }
+      /* header {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+      } */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin: 20px 20px;
+        border: 1px solid #000;
+      }
+      .flight-dtls,
+      .agncy-dtls {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 400px;
+        justify-content: space-around;
+      }
+      .fcol {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        min-width: 400px;
+        flex-wrap: wrap;
+        /* overflow: scroll; */
+        /* align-items: center; */
+      }
+      .frow {
+        display: flex;
+        flex: 1;
+        min-width: 300px;
+        flex-wrap: wrap;
+        /* overflow: scroll; */
+        /* justify-content: center; */
+      }
+      .b1 {
+        border: 1px solid #000;
+      }
+
+      /* p {
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+        margin-left: 50px;
+      } */
+      .grid7 {
+        display: grid;
+        grid-template-columns: repeat(7, auto);
+      }
+      .grid8 {
+        display: grid;
+        grid-template-columns: repeat(8, auto);
+      }
+      .grid2 {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        /* padding: 5px 50px; */
+      }
+      .table-heading {
+        padding: 20px;
+        background-color: #7842c0;
+        color: #fff;
+        font-weight: bold;
+      }
+      .tab-col-head {
+        padding: 10px;
+        background-color: #b67eff;
+        color: #fff;
+        font-weight: bold;
+      }
+      .tab-col {
+        padding: 10px;
+        border: 1px solid #b67eff;
+      }
+      .doted-top-bdr {
+        border: 1px dotted #b67eff;
+      }
+      .r-align {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .col-r-align {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 10px;
+        /* font-weight: bold; */
+      }
+      .alc {
+        align-items: center;
+      }
+      .jcc {
+        justify-content: center;
+      }
+      .bold {
+        font-weight: bold;
+      }
+      .pl-15 {
+        padding-left: 15px;
+      }
+      .success {
+        font-weight: bold;
+        color: rgb(46, 156, 46);
+      }
+      .fwrap {
+        flex-wrap: wrap;
+      }
+      .afe {
+        align-items: flex-end;
+      }
+      .pr-40 {
+        padding-right: 40px;
+      }
+      .pl-40 {
+        padding-left: 40px;
+      }
+      .pd-20 {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Agency Details -->
+      <div class="agncy-dtls">
+        <!-- Agency logo -->
+        <div class="fcol pl-40">
+          <img height="53px" width="150px" src="logo.png" />
+        </div>
+        <!-- Agency contact  -->
+        <div class="fcol">
+          <ul class="fcol afe pr-40">
+            <li>9B, Marquee Street, Kolkata-700040</li>
+            <li>Phone: +91 1234567890</li>
+            <li>Email: support@gogetin.com</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Head Note -->
+      <div class="flight-dtls">
+        <!-- Booking details -->
+        <div class="fcol jcc pl-15 bold">
+          <ul>
+            <li>Booking Time: Jan 20, 2023 12:56 PM</li>
+            <li>Booking ID: TJ106254381175</li>
+            <li>Booking Status: <span class="success">CONFIRMED</span></li>
+          </ul>
+        </div>
+        <!-- Airline Important Info -->
+        <div class="frow alc">
+          <div class="fcol alc jcc">
+            <img class="" height="100px" width="60px" src="air_india.png" />
+            <p class="bold">Air India</p>
+          </div>
+          <div class="fcol alc">
+            <h3>YZ83JH</h3>
+            <p>Airline PNR</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Flight Details -->
+    <div class="fcol b1">
+      <div class="frow table-heading">
+        <div>Flight Details</div>
+        <div class="frow r-align">
+          *Please verify flight timings & terminal info with the airlines
+        </div>
+      </div>
+      <!-- flight table -->
+      <div class="grid7">
+        <!-- column names -->
+        <div class="tab-col-head">Flight</div>
+        <div class="tab-col-head">Fare Type</div>
+        <div class="tab-col-head">Class</div>
+        <div class="tab-col-head">Type</div>
+        <div class="tab-col-head">Departing</div>
+        <div class="tab-col-head">Arriving</div>
+        <div class="tab-col-head">Duration</div>
+        <!-- table data -->
+        <div class="tab-col">6E - 6785 IndiGo</div>
+        <div class="tab-col">$100</div>
+        <div class="tab-col">Economy</div>
+        <div class="tab-col">Refundable</div>
+        <div class="tab-col">
+          Wed, 25 Jan '23, 07:55 Kolkata, Netaji Subhas Chandra Bose Intl
+        </div>
+        <div class="tab-col">
+          Wed, 25 Jan '23, 09:00 Bagdogra, Bagdogra Arpt
+        </div>
+        <div class="tab-col">1h 5m</div>
+      </div>
+    </div>
+    <!-- Passenger Details -->
+    <div class="fcol b1">
+      <div class="frow table-heading">
+        <div class="frow">Passenger Details</div>
+      </div>
+      <!-- passenger table -->
+      <div class="grid8">
+        <!-- column names -->
+        <div class="tab-col-head">Name</div>
+        <div class="tab-col-head">Sector</div>
+        <div class="tab-col-head">PNR</div>
+        <div class="tab-col-head">Ticket Number</div>
+        <div class="tab-col-head">Baggage</div>
+        <div class="tab-col-head">Meal, Seat & Other Preference</div>
+        <div class="tab-col-head">Seat Preference</div>
+        <div class="tab-col-head">Document Id</div>
+        <!-- table data 1 -->
+        <div class="tab-col">Dummy Name</div>
+        <div class="tab-col">CCU-IXB</div>
+        <div class="tab-col">YZ83JH</div>
+        <div class="tab-col">123456</div>
+        <div class="tab-col">Refundable</div>
+        <div class="tab-col">NA</div>
+        <div class="tab-col">NA</div>
+        <div class="tab-col">12345</div>
+        <!-- table data 2-->
+        <div class="tab-col">Dummy Name</div>
+        <div class="tab-col">CCU-IXB</div>
+        <div class="tab-col">YZ83JH</div>
+        <div class="tab-col">123456</div>
+        <div class="tab-col">Refundable</div>
+        <div class="tab-col">NA</div>
+        <div class="tab-col">NA</div>
+        <div class="tab-col">12345</div>
+        <!-- table data 3-->
+        <div class="tab-col">Dummy Name</div>
+        <div class="tab-col">CCU-IXB</div>
+        <div class="tab-col">YZ83JH</div>
+        <div class="tab-col">123456</div>
+        <div class="tab-col">Refundable</div>
+        <div class="tab-col">NA</div>
+        <div class="tab-col">NA</div>
+        <div class="tab-col">12345</div>
+      </div>
+    </div>
+    <div class="frow">
+      <!-- Fare Details -->
+      <div class="fcol b1">
+        <div class="table-heading">Fare Summary</div>
+        <!-- fare table -->
+        <div class="grid2">
+          <!-- column header -->
+          <div class="tab-col-head">Type</div>
+          <div class="tab-col-head r-align">Amount</div>
+          <!-- table data -->
+          <div class="tab-col">Base</div>
+          <div class="tab-col r-align">$100</div>
+          <div class="tab-col">Airline Taxes and Fees</div>
+          <div class="tab-col r-align">$0</div>
+          <div class="tab-col">Management Fee</div>
+          <div class="tab-col r-align">$0</div>
+          <div class="tab-col">Meal/ Seat/Baggage/ Misc Charges</div>
+          <div class="tab-col r-align">$0</div>
+          <div class="tab-col">Management Fee GST</div>
+          <div class="tab-col r-align">$0</div>
+          <div class="tab-col doted-top-bdr">Total</div>
+          <div class="tab-col doted-top-bdr r-align">$100</div>
+        </div>
+      </div>
+      <!-- Contact Person Name -->
+      <div class="fcol b1">
+        <div class="table-heading">Contact Person Name</div>
+        <div class="grid2">
+          <div class="tab-col-head">Name</div>
+          <div class="tab-col">Dummy Name</div>
+          <div class="tab-col-head">Contact Number</div>
+          <div class="tab-col">+91 00000 00000</div>
+          <div class="tab-col-head">Email id</div>
+          <div class="tab-col">email@domain.com</div>
+        </div>
+      </div>
+      <!-- Special Service -->
+      <div class="fcol b1">
+        <div class="table-heading">Special Deals</div>
+        <div class="grid2">
+          <div class="tab-col-head">Name</div>
+          <div class="tab-col-head">Special Service</div>
+          <div class="tab-col">Dummy Name</div>
+          <div class="tab-col">Some service</div>
+          <div class="tab-col">Dummy Name</div>
+          <div class="tab-col">Some service</div>
+          <div class="tab-col">Dummy Name</div>
+          <div class="tab-col">Some service</div>
+        </div>
+      </div>
+    </div>
+    <!-- Important Notes -->
+    <div class="fcol">
+      <div class="table-heading">Important Notes</div>
+      <ol class="fcol pd-20">
+        <li>
+          You must web check-in on the airline website and obtain a boarding
+          pass.
+        </li>
+        <li>
+          You must web check-in on the airline website and obtain a boarding
+          pass.
+        </li>
+        <li>
+          Reach the terminal at least 2 hours prior to the departure for
+          domestic flight and 4 hours prior to the departure of international
+          flight.
+        </li>
+        <li>
+          You must web check-in on the airline website and obtain a boarding
+          pass.
+        </li>
+        <li>
+          You must web check-in on the airline website and obtain a boarding
+          pass.
+        </li>
+        <li>
+          Reach the terminal at least 2 hours prior to the departure for
+          domestic flight and 4 hours prior to the departure of international
+          flight.
+        </li>
+      </ol>
+    </div>
+    <!-- Cautions -->
+    <img src="goodnItems.png" />
+  </body>
+</html>
