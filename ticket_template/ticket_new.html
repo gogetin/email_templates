@@ -10,6 +10,7 @@
         list-style: none;
       }
       body {
+        overflow-wrap: break-word;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
           "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -18,9 +19,11 @@
         display: grid;
         grid-template-columns: repeat(2, minmax(300px, 1fr));
       } */
+
       * {
         margin: 0;
         padding: 0;
+        font-size: calc(0.875rem * 1.1);
       }
       body {
         margin: 20px 20px;
@@ -37,7 +40,6 @@
         display: flex;
         flex-direction: column;
         flex: 1;
-        min-width: 400px;
         flex-wrap: wrap;
         /* overflow: scroll; */
         /* align-items: center; */
@@ -45,13 +47,19 @@
       .frow {
         display: flex;
         flex: 1;
-        min-width: 300px;
+
         flex-wrap: wrap;
         /* overflow: scroll; */
         /* justify-content: center; */
       }
       .b1 {
         border: 1px solid #000;
+      }
+      .min-width-1 {
+        min-width: 175px !important;
+      }
+      .min-width-2 {
+        min-width: 400px;
       }
 
       /* p {
@@ -62,15 +70,15 @@
       } */
       .grid7 {
         display: grid;
-        grid-template-columns: repeat(7, auto);
+        grid-template-columns: repeat(7, minmax(30px, auto));
       }
-      .grid8 {
+      .grid6 {
         display: grid;
-        grid-template-columns: repeat(8, auto);
+        grid-template-columns: repeat(6, minmax(30px, auto));
       }
       .grid2 {
         display: grid;
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(2, minmax(30px, auto));
         /* padding: 5px 50px; */
       }
       .table-heading {
@@ -141,11 +149,11 @@
       <!-- Agency Details -->
       <div class="agncy-dtls">
         <!-- Agency logo -->
-        <div class="fcol pl-40">
+        <div class="fcol pl-40 min-width-1">
           <img height="53px" width="150px" src="logo.png" />
         </div>
         <!-- Agency contact  -->
-        <div class="fcol">
+        <div class="fcol min-width-1">
           <ul class="fcol afe pr-40">
             <li>9B, Marquee Street, Kolkata-700040</li>
             <li>Phone: +91 1234567890</li>
@@ -180,9 +188,9 @@
     <div class="fcol b1">
       <div class="frow table-heading">
         <div>Flight Details</div>
-        <div class="frow r-align">
+        <!-- <div class="frow r-align">
           *Please verify flight timings & terminal info with the airlines
-        </div>
+        </div> -->
       </div>
       <!-- flight table -->
       <div class="grid7">
@@ -214,7 +222,7 @@
         <div class="frow">Passenger Details</div>
       </div>
       <!-- passenger table -->
-      <div class="grid8">
+      <div class="grid6">
         <!-- column names -->
         <div class="tab-col-head">Name</div>
         <div class="tab-col-head">Sector</div>
@@ -222,8 +230,7 @@
         <div class="tab-col-head">Ticket Number</div>
         <div class="tab-col-head">Baggage</div>
         <div class="tab-col-head">Meal, Seat & Other Preference</div>
-        <div class="tab-col-head">Seat Preference</div>
-        <div class="tab-col-head">Document Id</div>
+
         <!-- table data 1 -->
         <div class="tab-col">Dummy Name</div>
         <div class="tab-col">CCU-IXB</div>
@@ -231,8 +238,7 @@
         <div class="tab-col">123456</div>
         <div class="tab-col">Refundable</div>
         <div class="tab-col">NA</div>
-        <div class="tab-col">NA</div>
-        <div class="tab-col">12345</div>
+
         <!-- table data 2-->
         <div class="tab-col">Dummy Name</div>
         <div class="tab-col">CCU-IXB</div>
@@ -240,8 +246,7 @@
         <div class="tab-col">123456</div>
         <div class="tab-col">Refundable</div>
         <div class="tab-col">NA</div>
-        <div class="tab-col">NA</div>
-        <div class="tab-col">12345</div>
+
         <!-- table data 3-->
         <div class="tab-col">Dummy Name</div>
         <div class="tab-col">CCU-IXB</div>
@@ -249,13 +254,11 @@
         <div class="tab-col">123456</div>
         <div class="tab-col">Refundable</div>
         <div class="tab-col">NA</div>
-        <div class="tab-col">NA</div>
-        <div class="tab-col">12345</div>
       </div>
     </div>
     <div class="frow">
       <!-- Fare Details -->
-      <div class="fcol b1">
+      <div class="fcol b1 min-width-2">
         <div class="table-heading">Fare Summary</div>
         <!-- fare table -->
         <div class="grid2">
@@ -278,7 +281,7 @@
         </div>
       </div>
       <!-- Contact Person Name -->
-      <div class="fcol b1">
+      <div class="fcol b1 min-width-2">
         <div class="table-heading">Contact Person Name</div>
         <div class="grid2">
           <div class="tab-col-head">Name</div>
@@ -290,7 +293,7 @@
         </div>
       </div>
       <!-- Special Service -->
-      <div class="fcol b1">
+      <!-- <div class="fcol b1">
         <div class="table-heading">Special Deals</div>
         <div class="grid2">
           <div class="tab-col-head">Name</div>
@@ -302,7 +305,7 @@
           <div class="tab-col">Dummy Name</div>
           <div class="tab-col">Some service</div>
         </div>
-      </div>
+      </div> -->
     </div>
     <!-- Important Notes -->
     <div class="fcol">
