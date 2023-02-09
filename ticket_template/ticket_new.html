@@ -78,8 +78,21 @@
       }
       .grid2 {
         display: grid;
+
         grid-template-columns: repeat(2, minmax(30px, auto));
         /* padding: 5px 50px; */
+      }
+      .grid3 {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, minmax(30px, auto));
+        grid-template-rows: 50px auto;
+      }
+      .grid4 {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(4, minmax(30px, auto));
+        grid-template-rows: 50px auto;
       }
       .table-heading {
         padding: 20px;
@@ -142,6 +155,10 @@
       .pd-20 {
         padding: 20px;
       }
+      .flex-1 {
+        flex: 1;
+        flex-grow: full;
+      }
     </style>
   </head>
   <body>
@@ -193,27 +210,37 @@
         </div> -->
       </div>
       <!-- flight table -->
-      <div class="grid7">
-        <!-- column names -->
-        <div class="tab-col-head">Flight</div>
-        <div class="tab-col-head">Fare Type</div>
-        <div class="tab-col-head">Class</div>
-        <div class="tab-col-head">Type</div>
-        <div class="tab-col-head">Departing</div>
-        <div class="tab-col-head">Arriving</div>
-        <div class="tab-col-head">Duration</div>
-        <!-- table data -->
-        <div class="tab-col">6E - 6785 IndiGo</div>
-        <div class="tab-col">$100</div>
-        <div class="tab-col">Economy</div>
-        <div class="tab-col">Refundable</div>
-        <div class="tab-col">
-          Wed, 25 Jan '23, 07:55 Kolkata, Netaji Subhas Chandra Bose Intl
+      <div class="frow min-width-1">
+        <div class="frow flex-1">
+          <div class="grid4 min-width-1">
+            <!-- column names -->
+            <div class="tab-col-head">Flight</div>
+            <div class="tab-col-head">Fare Type</div>
+            <div class="tab-col-head">Class</div>
+            <div class="tab-col-head">Type</div>
+            <!-- table data -->
+            <div class="tab-col">6E - 6785 IndiGo</div>
+            <div class="tab-col">$100</div>
+            <div class="tab-col">Economy</div>
+            <div class="tab-col">Refundable</div>
+          </div>
         </div>
-        <div class="tab-col">
-          Wed, 25 Jan '23, 09:00 Bagdogra, Bagdogra Arpt
+        <div class="frow flex-1">
+          <div class="grid3 min-width-1">
+            <!-- column names -->
+            <div class="tab-col-head">Departing</div>
+            <div class="tab-col-head">Arriving</div>
+            <div class="tab-col-head">Duration</div>
+            <!-- table data -->
+            <div class="tab-col">
+              Wed, 25 Jan '23, 07:55 Kolkata, Netaji Subhas Chandra Bose Intl
+            </div>
+            <div class="tab-col">
+              Wed, 25 Jan '23, 09:00 Bagdogra, Bagdogra Arpt
+            </div>
+            <div class="tab-col">1h 5m</div>
+          </div>
         </div>
-        <div class="tab-col">1h 5m</div>
       </div>
     </div>
     <!-- Passenger Details -->
