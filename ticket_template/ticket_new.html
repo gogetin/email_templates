@@ -23,7 +23,16 @@
       * {
         margin: 0;
         padding: 0;
-        font-size: calc(0.875rem * 1.1);
+        font-size: 0.875rem;
+      }
+      .font-sm {
+        font-size: 0.875rem;
+      }
+      .font-md {
+        font-size: calc(0.875rem * 1.4);
+      }
+      .font-lg {
+        font-size: calc(0.875rem * 1.6);
       }
       body {
         margin: 20px 20px;
@@ -96,22 +105,22 @@
       }
       .table-heading {
         padding: 20px;
-        background-color: #7842c0;
+        background-color: #c2a7e4;
         color: #fff;
         font-weight: bold;
       }
       .tab-col-head {
         padding: 10px;
-        background-color: #b67eff;
+        background-color: #c6a4f0;
         color: #fff;
         font-weight: bold;
       }
       .tab-col {
         padding: 10px;
-        border: 1px solid #b67eff;
+        border: 1px solid #deccf5;
       }
       .doted-top-bdr {
-        border: 1px dotted #b67eff;
+        border: 1px dotted #f1e6ff;
       }
       .r-align {
         display: flex;
@@ -157,31 +166,43 @@
       }
       .flex-1 {
         flex: 1;
-        flex-grow: full;
+        /* flex-grow: full; */
+      }
+      .jsa {
+        justify-content: space-around;
+      }
+      .min-width-3 {
+        min-width: 355px;
+      }
+      .mb1 {
+        margin-bottom: 10px;
+      }
+      .br-1 {
+        border-right: 1px solid #c6a4f0;
       }
     </style>
   </head>
   <body>
     <header>
       <!-- Agency Details -->
-      <div class="agncy-dtls">
+      <div class="agncy-dtls mb1">
         <!-- Agency logo -->
         <div class="fcol pl-40 min-width-1">
-          <img height="53px" width="150px" src="logo.png" />
+          <img height="63px" width="150px" src="logo.png" />
         </div>
         <!-- Agency contact  -->
         <div class="fcol min-width-1">
-          <ul class="fcol afe pr-40">
-            <li>9B, Marquee Street, Kolkata-700040</li>
-            <li>Phone: +91 1234567890</li>
-            <li>Email: support@gogetin.com</li>
+          <ul class="fcol afe pr-40 font-md">
+            <li class="font-md">9B, Marquee Street, Kolkata-700040</li>
+            <li class="font-md">Phone: +91 98304 40921</li>
+            <li class="font-md">Email: support@gogetin.com</li>
           </ul>
         </div>
       </div>
       <!-- Head Note -->
       <div class="flight-dtls">
         <!-- Booking details -->
-        <div class="fcol jcc pl-15 bold">
+        <div class="fcol jcc pl-15 bold min-width-2">
           <ul>
             <li>Booking Time: Jan 20, 2023 12:56 PM</li>
             <li>Booking ID: TJ106254381175</li>
@@ -189,20 +210,42 @@
           </ul>
         </div>
         <!-- Airline Important Info -->
-        <div class="frow alc">
-          <div class="fcol alc jcc">
+        <div class="frow jsa min-width-2">
+          <!-- Journey -->
+          <div class="fcol jcc alc br-1">
+            <!-- <h3>Journey</h3> -->
+            <div>
+              <img class="" height="120px" width="120px" src="air_india.png" />
+            </div>
+            <div>
+              <h3>YZ83JH</h3>
+              <div>Airline PNR</div>
+            </div>
+          </div>
+          <!-- Return -->
+          <div class="fcol jcc alc">
+            <!-- <h3>Return</h3> -->
+            <div>
+              <img class="" height="120px" width="120px" src="air_india.png" />
+            </div>
+            <div>
+              <h3>YZ83JH</h3>
+              <div>Airline PNR</div>
+            </div>
+          </div>
+          <!-- <div class="fcol alc jcc">
             <img class="" height="100px" width="60px" src="air_india.png" />
             <p class="bold">Air India</p>
-          </div>
-          <div class="fcol alc">
+          </div> -->
+          <!-- <div class="fcol alc">
             <h3>YZ83JH</h3>
             <p>Airline PNR</p>
-          </div>
+          </div> -->
         </div>
       </div>
     </header>
     <!-- Flight Details -->
-    <div class="fcol b1">
+    <div class="fcol">
       <div class="frow table-heading">
         <div>Flight Details</div>
         <!-- <div class="frow r-align">
@@ -212,7 +255,7 @@
       <!-- flight table -->
       <div class="frow min-width-1">
         <div class="frow flex-1">
-          <div class="grid4 min-width-1">
+          <div class="grid4 min-width-2">
             <!-- column names -->
             <div class="tab-col-head">Flight</div>
             <div class="tab-col-head">Fare Type</div>
@@ -226,7 +269,7 @@
           </div>
         </div>
         <div class="frow flex-1">
-          <div class="grid3 min-width-1">
+          <div class="grid3 min-width-2">
             <!-- column names -->
             <div class="tab-col-head">Departing</div>
             <div class="tab-col-head">Arriving</div>
