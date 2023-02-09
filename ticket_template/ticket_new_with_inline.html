@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en" style="margin: 0; padding: 0; font-size: 0.875rem">
+  <head style="margin: 0; padding: 0; font-size: 0.875rem">
+    <meta charset="UTF-8" style="margin: 0; padding: 0; font-size: 0.875rem" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+      style="margin: 0; padding: 0; font-size: 0.875rem"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      style="margin: 0; padding: 0; font-size: 0.875rem"
+    />
+    <title style="margin: 0; padding: 0; font-size: 0.875rem">
+      Airline Ticket
+    </title>
+  </head>
+  <body
+    style="
+      margin: 20px 20px;
+      padding: 0;
+      font-size: 0.875rem;
+      overflow-wrap: break-word;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+        'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+      border: 1px solid #000;
+    "
+  >
+    <header style="margin: 0; padding: 0; font-size: 0.875rem">
+      <!-- Agency Details -->
+      <div
+        style="
+          margin: 0;
+          padding: 0;
+          font-size: 0.875rem;
+          display: flex;
+          flex-wrap: wrap;
+          min-width: 300px;
+          justify-content: space-around;
+          margin-bottom: 10px;
+        "
+      >
+        <!-- Agency logo -->
+        <div
+          style="
+            margin: 0;
+            padding: 0;
+            font-size: 0.875rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            flex-wrap: wrap;
+            padding-left: 40px;
+            min-width: 175px !important;
+          "
+        >
+          <img
+            height="63px"
+            width="150px"
+            src="logo.png"
+            style="margin: 0; padding: 0; font-size: 0.875rem"
+          />
+        </div>
+        <!-- Agency contact  -->
+        <div
+          style="
+            margin: 0;
+            padding: 0;
+            font-size: 0.875rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            flex-wrap: wrap;
+            min-width: 175px !important;
+          "
+        >
+          <ul
+            style="
+              margin: 0;
+              padding: 0;
+              font-size: calc(0.875rem * 1.4);
+              list-style: none;
+              display: flex;
+              flex-direction: column;
+              flex: 1;
+              flex-wrap: wrap;
+              align-items: flex-end;
+              padding-right: 40px;
+            "
+          >
+            <li style="margin: 0; padding: 0; font-size: calc(0.875rem * 1.4)">
+              9B, Marquee Street, Kolkata-700040
+            </li>
+            <li style="margin: 0; padding: 0; font-size: calc(0.875rem * 1.4)">
+              Phone: +91 98304 40921
+            </li>
+            <li style="margin: 0; padding: 0; font-size: calc(0.875rem * 1.4)">
+              Email: support@gogetin.com
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Head Note -->
+      <div
+        style="
+          margin: 0;
+          padding: 0;
+          font-size: 0.875rem;
+          display: flex;
+          flex-wrap: wrap;
+          min-width: 300px;
+          justify-content: space-around;
+        "
+      >
+        <!-- Booking details -->
+        <div
+          style="
+            margin: 0;
+            padding: 0;
+            font-size: 0.875rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            flex-wrap: wrap;
+            min-width: 300px;
+            justify-content: center;
+            font-weight: bold;
+            padding-left: 15px;
+          "
+        >
+          <ul
+            style="margin: 0; padding: 0; font-size: 0.875rem; list-style: none"
+          >
+            <li style="margin: 0; padding: 0; font-size: 0.875rem">
+              Booking Time: Jan 20, 2023 12:56 PM
+            </li>
+            <li style="margin: 0; padding: 0; font-size: 0.875rem">
+              Booking ID: TJ106254381175
+            </li>
+            <li style="margin: 0; padding: 0; font-size: 0.875rem">
+              Booking Status:
+              <span
+                style="
+                  margin: 0;
+                  padding: 0;
+                  font-size: 0.875rem;
+                  font-weight: bold;
+                  color: rgb(46, 156, 46);
+                "
+                >CONFIRMED</span
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Airline Important Info -->
+        <div
+          style="
+            margin: 0;
+            padding: 0;
+            font-size: 0.875rem;
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap;
+            min-width: 300px;
+            justify-content: space-around;
+          "
+        >
+          <!-- Journey -->
+          <div
+            style="
+              margin: 0;
+              padding: 0;
+              font-size: 0.875rem;
+              display: flex;
+              flex-direction: column;
+              flex: 1;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: center;
+              
+            "
+          >
+            <!-- <h3>Journey</h3> -->
+            <div style="margin: 0; padding: 0; font-size: 0.875rem">
+              <img
+                class=""
+                height="120px"
+                width="120px"
+                src="air_india.png"
+                style="margin: 0; padding: 0; font-size: 0.875rem"
+              />
+            </div>
+            <div style="margin: 0; padding: 0; font-size: 0.875rem">
+              <h3 style="margin: 0; padding: 0; font-size: 0.875rem">YZ83JH</h3>
+              <div style="margin: 0; padding: 0; font-size: 0.875rem">
+                Airline PNR
+              </div>
+            </div>
+          </div>
+          <!-- Return -->
+          <div
+            style="
+              margin: 0;
+              padding: 0;
+              font-size: 0.875rem;
+              display: flex;
+              flex-direction: column;
+              flex: 1;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: center;
+              border-left: 1px solid #c6a4f0;
+            "
+          >
+            <!-- <h3>Return</h3> -->
+            <div style="margin: 0; padding: 0; font-size: 0.875rem">
+              <img
+                class=""
+                height="120px"
+                width="120px"
+                src="air_india.png"
+                style="margin: 0; padding: 0; font-size: 0.875rem"
+              />
+            </div>
+            <div style="margin: 0; padding: 0; font-size: 0.875rem">
+              <h3 style="margin: 0; padding: 0; font-size: 0.875rem">YZ83JH</h3>
+              <div style="margin: 0; padding: 0; font-size: 0.875rem">
+                Airline PNR
+              </div>
+            </div>
+          </div>
+          <!-- <div >
+            <img  />
+            <p >Air India</p>
+          </div> -->
+          <!-- <div >
+            <h3>YZ83JH</h3>
+            <p>Airline PNR</p>
+          </div> -->
+        </div>
+      </div>
+    </header>
+    <!-- Flight Details -->
+    <div
+      style="
+        margin: 0;
+        padding: 0;
+        font-size: 0.875rem;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        flex-wrap: wrap;
+      "
+    >
+      <div
+        style="
+          margin: 0;
+          padding: 20px;
+          font-size: 0.875rem;
+          display: flex;
+          flex: 1;
+          flex-wrap: wrap;
+          background-color: #c2a7e4;
+          color: #fff;
+          font-weight: bold;
+        "
+      >
+        <div style="margin: 0; padding: 0; font-size: 0.875rem">
+          Flight Details
+        </div>
+        <!-- <div >
+          *Please verify flight timings & terminal info with the airlines
+        </div> -->
+      </div>
+      <!-- flight table -->
+      <div
+        style="
+          margin: 0;
+          padding: 0;
+          font-size: 0.875rem;
+          display: flex;
+          flex: 1;
+          flex-wrap: wrap;
+          min-width: 175px !important;
+        "
+      >
+        <div
+          style="
+            margin: 0;
+            padding: 0;
+            font-size: 0.875rem;
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap;
+          "
+        >
+          <div
+            style="
+              margin: 0;
+              padding: 0;
+              font-size: 0.875rem;
+              min-width: 300px;
+              display: grid;
+              width: 100%;
+              grid-template-columns: repeat(4, minmax(30px, auto));
+              grid-template-rows: 50px auto;
+            "
+          >
+            <!-- column names -->
+            <div
+              style="
+                margin: 0;
+                padding: 10px;
+                font-size: 0.875rem;
+                background-color: #c6a4f0;
+                color: #fff;
+                font-weight: bold;
+              "
+            >
+              Flight
+            </div>
+            <div
+              style="
+                margin: 0;
+                padding: 10px;
+                font-size: 0.875rem;
+                background-color: #c6a4f0;
+                color: #fff;
+                font-weight: bold;
+              "
+            >
+              Fare Type
+            </div>
+            <div
+              style="
+                margin: 0;
+                padding: 10px;
+                font-size: 0.875rem;
+                background-color: #c6a4f0;
+                color: #fff;
+                font-weight: bold;
+              "
+            >
+              Class
+            </div>
+            <div
+              style="
+                margin: 0;
+                padding: 10px;
+                font-size: 0.875rem;
+                background-color: #c6a4f0;
+                color: #fff;
+                font-weight: bold;
+              "
+            >
+              Type
+            </div>
+            <!-- table data -->
+            <div
+              style="
+                margin: 0;
+                padding: 10px;
+                font-size: 0.875rem;
+                border: 1px solid #deccf5;
+              "
+            >
+              6E - 6785 IndiGo
+            </div>
+            <div
+              style="
+                margin: 0;
+                padding: 10px;
+                font-size: 0.875rem;
+                border: 1px solid #deccf5;
+              "
+            >
+              $100
+            </div>
+            <div
+              style="
+                margin: 0;
+                padding: 10px;
+                font-size: 0.875rem;
+                border: 1px solid #deccf5;
+              "
+            >
+              Economy
+            </div>
+            <div
+              style="
+                margin: 0;
+                padding: 10px;
+                font-size: 0.875rem;
+                border: 1px solid #deccf5;
+              "
+            >
+              Refundable
+            </div>
+          </div>
+        </div>
+        <div
+          style="
+            margin: 0;
+            padding: 0;
+            font-size: 0.875rem;
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap;
+          "
+        >
+          <div
+            style="
+              margin: 0;
+              padding: 0;
+              font-size: 0.875rem;
+              min-width: 300px;
+              display: grid;
+              width: 100%;
+              grid-template-columns: repeat(3, minmax(30px, auto));
+              grid-template-rows: 50px auto;
+            "
+          >
+            <!-- column names -->
+            <div
+              style="
+                margin: 0;
+                padding: 10px;
+                font-size: 0.875rem;
+                background-color: #c6a4f0;
+                color: #fff;
+                font-weight: bold;
+              "
+            >
+              Departing
+            </div>
+            <div
+              style="
+                margin: 0;
+                padding: 10px;
+                font-size: 0.875rem;
+                background-color: #c6a4f0;
+                color: #fff;
+                font-weight: bold;
+              "
+            >
+              Arriving
+            </div>
+            <div
+              style="
+                margin: 0;
+                padding: 10px;
+                font-size: 0.875rem;
+                background-color: #c6a4f0;
+                color: #fff;
+                font-weight: bold;
+              "
+            >
+              Duration
+            </div>
+            <!-- table data -->
+            <div
+              style="
+                margin: 0;
+                padding: 10px;
+                font-size: 0.875rem;
+                border: 1px solid #deccf5;
+              "
+            >
+              Wed, 25 Jan '23, 07:55 Kolkata, Netaji Subhas Chandra Bose Intl
+            </div>
+            <div
+              style="
+                margin: 0;
+                padding: 10px;
+                font-size: 0.875rem;
+                border: 1px solid #deccf5;
+              "
+            >
+              Wed, 25 Jan '23, 09:00 Bagdogra, Bagdogra Arpt
+            </div>
+            <div
+              style="
+                margin: 0;
+                padding: 10px;
+                font-size: 0.875rem;
+                border: 1px solid #deccf5;
+              "
+            >
+              1h 5m
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Passenger Details -->
+    <div
+      style="
+        margin: 0;
+        padding: 0;
+        font-size: 0.875rem;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        flex-wrap: wrap;
+        border: 1px solid #000;
+      "
+    >
+      <div
+        style="
+          margin: 0;
+          padding: 20px;
+          font-size: 0.875rem;
+          display: flex;
+          flex: 1;
+          flex-wrap: wrap;
+          background-color: #c2a7e4;
+          color: #fff;
+          font-weight: bold;
+        "
+      >
+        <div
+          style="
+            margin: 0;
+            padding: 0;
+            font-size: 0.875rem;
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap;
+          "
+        >
+          Passenger Details
+        </div>
+      </div>
+      <!-- passenger table -->
+      <div
+        style="
+          margin: 0;
+          padding: 0;
+          font-size: 0.875rem;
+          display: grid;
+          grid-template-columns: repeat(6, minmax(30px, auto));
+        "
+      >
+        <!-- column names -->
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            background-color: #c6a4f0;
+            color: #fff;
+            font-weight: bold;
+          "
+        >
+          Name
+        </div>
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            background-color: #c6a4f0;
+            color: #fff;
+            font-weight: bold;
+          "
+        >
+          Sector
+        </div>
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            background-color: #c6a4f0;
+            color: #fff;
+            font-weight: bold;
+          "
+        >
+          PNR
+        </div>
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            background-color: #c6a4f0;
+            color: #fff;
+            font-weight: bold;
+          "
+        >
+          Ticket Number
+        </div>
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            background-color: #c6a4f0;
+            color: #fff;
+            font-weight: bold;
+          "
+        >
+          Baggage
+        </div>
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            background-color: #c6a4f0;
+            color: #fff;
+            font-weight: bold;
+          "
+        >
+          Meal, Seat & Other Preference
+        </div>
+
+        <!-- table data 1 -->
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            border: 1px solid #deccf5;
+          "
+        >
+          Dummy Name
+        </div>
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            border: 1px solid #deccf5;
+          "
+        >
+          CCU-IXB
+        </div>
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            border: 1px solid #deccf5;
+          "
+        >
+          YZ83JH
+        </div>
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            border: 1px solid #deccf5;
+          "
+        >
+          123456
+        </div>
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            border: 1px solid #deccf5;
+          "
+        >
+          Refundable
+        </div>
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            border: 1px solid #deccf5;
+          "
+        >
+          NA
+        </div>
+
+        <!-- table data 2-->
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            border: 1px solid #deccf5;
+          "
+        >
+          Dummy Name
+        </div>
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            border: 1px solid #deccf5;
+          "
+        >
+          CCU-IXB
+        </div>
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            border: 1px solid #deccf5;
+          "
+        >
+          YZ83JH
+        </div>
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            border: 1px solid #deccf5;
+          "
+        >
+          123456
+        </div>
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            border: 1px solid #deccf5;
+          "
+        >
+          Refundable
+        </div>
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            border: 1px solid #deccf5;
+          "
+        >
+          NA
+        </div>
+
+        <!-- table data 3-->
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            border: 1px solid #deccf5;
+          "
+        >
+          Dummy Name
+        </div>
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            border: 1px solid #deccf5;
+          "
+        >
+          CCU-IXB
+        </div>
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            border: 1px solid #deccf5;
+          "
+        >
+          YZ83JH
+        </div>
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            border: 1px solid #deccf5;
+          "
+        >
+          123456
+        </div>
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            border: 1px solid #deccf5;
+          "
+        >
+          Refundable
+        </div>
+        <div
+          style="
+            margin: 0;
+            padding: 10px;
+            font-size: 0.875rem;
+            border: 1px solid #deccf5;
+          "
+        >
+          NA
+        </div>
+      </div>
+    </div>
+    <div
+      style="
+        margin: 0;
+        padding: 0;
+        font-size: 0.875rem;
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+      "
+    >
+      <!-- Fare Details -->
+      <div
+        style="
+          margin: 0;
+          padding: 0;
+          font-size: 0.875rem;
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+          flex-wrap: wrap;
+          border: 1px solid #000;
+          min-width: 300px;
+        "
+      >
+        <div
+          style="
+            margin: 0;
+            padding: 20px;
+            font-size: 0.875rem;
+            background-color: #c2a7e4;
+            color: #fff;
+            font-weight: bold;
+          "
+        >
+          Fare Summary
+        </div>
+        <!-- fare table -->
+        <div
+          style="
+            margin: 0;
+            padding: 0;
+            font-size: 0.875rem;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(30px, auto));
+          "
+        >
+          <!-- column header -->
+          <div
+            style="
+              margin: 0;
+              padding: 10px;
+              font-size: 0.875rem;
+              background-color: #c6a4f0;
+              color: #fff;
+              font-weight: bold;
+            "
+          >
+            Type
+          </div>
+          <div
+            style="
+              margin: 0;
+              padding: 10px;
+              font-size: 0.875rem;
+              background-color: #c6a4f0;
+              color: #fff;
+              font-weight: bold;
+              display: flex;
+              justify-content: flex-end;
+            "
+          >
+            Amount
+          </div>
+          <!-- table data -->
+          <div
+            style="
+              margin: 0;
+              padding: 10px;
+              font-size: 0.875rem;
+              border: 1px solid #deccf5;
+            "
+          >
+            Base
+          </div>
+          <div
+            style="
+              margin: 0;
+              padding: 10px;
+              font-size: 0.875rem;
+              border: 1px solid #deccf5;
+              display: flex;
+              justify-content: flex-end;
+            "
+          >
+            $100
+          </div>
+          <div
+            style="
+              margin: 0;
+              padding: 10px;
+              font-size: 0.875rem;
+              border: 1px solid #deccf5;
+            "
+          >
+            Airline Taxes and Fees
+          </div>
+          <div
+            style="
+              margin: 0;
+              padding: 10px;
+              font-size: 0.875rem;
+              border: 1px solid #deccf5;
+              display: flex;
+              justify-content: flex-end;
+            "
+          >
+            $0
+          </div>
+          <div
+            style="
+              margin: 0;
+              padding: 10px;
+              font-size: 0.875rem;
+              border: 1px solid #deccf5;
+            "
+          >
+            Management Fee
+          </div>
+          <div
+            style="
+              margin: 0;
+              padding: 10px;
+              font-size: 0.875rem;
+              border: 1px solid #deccf5;
+              display: flex;
+              justify-content: flex-end;
+            "
+          >
+            $0
+          </div>
+          <div
+            style="
+              margin: 0;
+              padding: 10px;
+              font-size: 0.875rem;
+              border: 1px solid #deccf5;
+            "
+          >
+            Meal/ Seat/Baggage/ Misc Charges
+          </div>
+          <div
+            style="
+              margin: 0;
+              padding: 10px;
+              font-size: 0.875rem;
+              border: 1px solid #deccf5;
+              display: flex;
+              justify-content: flex-end;
+            "
+          >
+            $0
+          </div>
+          <div
+            style="
+              margin: 0;
+              padding: 10px;
+              font-size: 0.875rem;
+              border: 1px solid #deccf5;
+            "
+          >
+            Management Fee GST
+          </div>
+          <div
+            style="
+              margin: 0;
+              padding: 10px;
+              font-size: 0.875rem;
+              border: 1px solid #deccf5;
+              display: flex;
+              justify-content: flex-end;
+            "
+          >
+            $0
+          </div>
+          <div
+            style="
+              margin: 0;
+              padding: 10px;
+              font-size: 0.875rem;
+              border: 1px dotted #f1e6ff;
+            "
+          >
+            Total
+          </div>
+          <div
+            style="
+              margin: 0;
+              padding: 10px;
+              font-size: 0.875rem;
+              border: 1px dotted #f1e6ff;
+              display: flex;
+              justify-content: flex-end;
+            "
+          >
+            $100
+          </div>
+        </div>
+      </div>
+      <!-- Contact Person Name -->
+      <div
+        style="
+          margin: 0;
+          padding: 0;
+          font-size: 0.875rem;
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+          flex-wrap: wrap;
+          border: 1px solid #000;
+          min-width: 300px;
+        "
+      >
+        <div
+          style="
+            margin: 0;
+            padding: 20px;
+            font-size: 0.875rem;
+            background-color: #c2a7e4;
+            color: #fff;
+            font-weight: bold;
+          "
+        >
+          Contact Person Name
+        </div>
+        <div
+          style="
+            margin: 0;
+            padding: 0;
+            font-size: 0.875rem;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(30px, auto));
+          "
+        >
+          <div
+            style="
+              margin: 0;
+              padding: 10px;
+              font-size: 0.875rem;
+              background-color: #c6a4f0;
+              color: #fff;
+              font-weight: bold;
+            "
+          >
+            Name
+          </div>
+          <div
+            style="
+              margin: 0;
+              padding: 10px;
+              font-size: 0.875rem;
+              border: 1px solid #deccf5;
+            "
+          >
+            Dummy Name
+          </div>
+          <div
+            style="
+              margin: 0;
+              padding: 10px;
+              font-size: 0.875rem;
+              background-color: #c6a4f0;
+              color: #fff;
+              font-weight: bold;
+            "
+          >
+            Contact Number
+          </div>
+          <div
+            style="
+              margin: 0;
+              padding: 10px;
+              font-size: 0.875rem;
+              border: 1px solid #deccf5;
+            "
+          >
+            +91 00000 00000
+          </div>
+          <div
+            style="
+              margin: 0;
+              padding: 10px;
+              font-size: 0.875rem;
+              background-color: #c6a4f0;
+              color: #fff;
+              font-weight: bold;
+            "
+          >
+            Email id
+          </div>
+          <div
+            style="
+              margin: 0;
+              padding: 10px;
+              font-size: 0.875rem;
+              border: 1px solid #deccf5;
+            "
+          >
+            email@domain.com
+          </div>
+        </div>
+      </div>
+      <!-- Special Service -->
+      <!-- <div >
+        <div >Special Deals</div>
+        <div >
+          <div >Name</div>
+          <div >Special Service</div>
+          <div >Dummy Name</div>
+          <div >Some service</div>
+          <div >Dummy Name</div>
+          <div >Some service</div>
+          <div >Dummy Name</div>
+          <div >Some service</div>
+        </div>
+      </div> -->
+    </div>
+    <!-- Important Notes -->
+    <div
+      style="
+        margin: 0;
+        padding: 0;
+        font-size: 0.875rem;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        flex-wrap: wrap;
+      "
+    >
+      <div
+        style="
+          margin: 0;
+          padding: 20px;
+          font-size: 0.875rem;
+          background-color: #c2a7e4;
+          color: #fff;
+          font-weight: bold;
+        "
+      >
+        Important Notes
+      </div>
+      <ol
+        style="
+          margin: 0;
+          padding: 20px;
+          font-size: 0.875rem;
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+          flex-wrap: wrap;
+        "
+      >
+        <li style="margin: 0; padding: 0; font-size: 0.875rem">
+          You must web check-in on the airline website and obtain a boarding
+          pass.
+        </li>
+        <li style="margin: 0; padding: 0; font-size: 0.875rem">
+          You must web check-in on the airline website and obtain a boarding
+          pass.
+        </li>
+        <li style="margin: 0; padding: 0; font-size: 0.875rem">
+          Reach the terminal at least 2 hours prior to the departure for
+          domestic flight and 4 hours prior to the departure of international
+          flight.
+        </li>
+        <li style="margin: 0; padding: 0; font-size: 0.875rem">
+          You must web check-in on the airline website and obtain a boarding
+          pass.
+        </li>
+        <li style="margin: 0; padding: 0; font-size: 0.875rem">
+          You must web check-in on the airline website and obtain a boarding
+          pass.
+        </li>
+        <li style="margin: 0; padding: 0; font-size: 0.875rem">
+          Reach the terminal at least 2 hours prior to the departure for
+          domestic flight and 4 hours prior to the departure of international
+          flight.
+        </li>
+      </ol>
+    </div>
+    <!-- Cautions -->
+    <img
+      width="100%"
+      src="goodnItems.png"
+      style="margin: 0; padding: 0; font-size: 0.875rem"
+    />
+  </body>
+</html>
